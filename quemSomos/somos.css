@@ -100,16 +100,10 @@ footer {
 }
 
 .university-section {
-    padding: 40px;
-    position: relative;
     display: grid;
     grid-template-columns: 450px 1fr;
-
     align-items: center;
-    margin-top: 80px;
-    width: 2000;
     max-width: 1780px;
-    border-radius: 10px;
     background-color: #FFFACD !important;
     margin-top: 80px;
     justify-items: center;
@@ -221,3 +215,12 @@ footer {
     }
 
 }
+
+@media (width < 480px){
+    .body-inside-section{
+        margin-right: 100px;
+    }
+    .body-inside-section p{
+        margin-right: 20px;
+    }
+    }
