@@ -143,7 +143,6 @@ p {
 .body-inside-section {
 
   flex-direction: column;
-  /* background: #333333; */
   border-radius: 10px;
   color: #000000;
   position: relative;
@@ -277,7 +276,7 @@ p {
   opacity: 1;
   color: #fff;
   margin: 8px 5px;
-  margin-left: 545px;
+  margin-left: 40%;
   margin-top: 25px;
   border-radius: 7px;
 }
@@ -435,22 +434,6 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-  .navbar {
-    min-height: 50px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card-element {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 1025px) {
-
-}
-
 
 .content {
   margin-top: 100px;
@@ -584,4 +567,54 @@ footer p {
 .body-carousel h1 {
 
   color: #e9f0ff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-element {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .university-section {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+  }
+
+  .insert {
+    display: flex;
+    width: 20%;
+    margin-left: 40%;
+    height: 40%;
+  }
+}
+
+@media ((width > 500px) and (width < 800px)) {
+  
+  .form-input input {
+    width: 300px;
+  }
+
+  .form-last {
+    margin-top: 500px;
+    padding-right: 1000px;
+  }
+
+  .last-card-body {
+    padding-left: 60%;
+  }
+
+  .last-form button {
+    margin-right: 160px;
+    width: 200px;
+  }
 }
