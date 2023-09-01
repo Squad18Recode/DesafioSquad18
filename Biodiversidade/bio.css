@@ -211,5 +211,9 @@ footer {
     .imagem {
         flex-direction: column-reverse;
     }
+    
+    p{
+       max-width: 350px;
+    }
 
 }

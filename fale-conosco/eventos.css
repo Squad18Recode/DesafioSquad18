@@ -559,6 +559,9 @@
     .wrapper {
       justify-content: center;
     }
+    .subtitle{
+      margin-bottom: 100px;
+    }
   }
   
 
