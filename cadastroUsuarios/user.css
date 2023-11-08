@@ -4,6 +4,12 @@ body {
     height: 100vh;
 }
 
+.logo{
+    height: 65px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
 .lef {
     position: relative;
     left: 25px;

@@ -9,6 +9,12 @@
     margin-bottom: 2%;
 }
 
+.logo{
+    height: 65px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
 .navbar {
     position: fixed !important;
     top: 0;
@@ -21,7 +27,7 @@
     transition: all .3s;
 }
 
-img, svg{
+svg{
 width: 100px;
 margin-right: 20px;
 height: 55px;

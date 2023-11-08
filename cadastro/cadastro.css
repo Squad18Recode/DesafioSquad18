@@ -1,7 +1,21 @@
 body {
     width: 100%;
     background-image: url(../assets/textura-reciclar.avif);
+    overflow-x: hidden;
 }
+
+.logo{
+    height: 65px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
 
 .profile-card {
     position: relative;
@@ -137,22 +151,22 @@ body {
     background-color: #fff;
 }
 
-.link {
+ .link {
     cursor: pointer !important;
     color: #fff;
 }
 
 footer {
     position: relative;
-    top: 40px;
-    height: fit-content;
+    top: 212px;
     margin: auto;
     padding: 1rem;
     background-color: #333333;
     text-align: center;
-    font-family: 'Poppins', sans-serif !important;
     color: #fff;
     border-bottom-right-radius: .5em;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
 .navbar {
@@ -164,7 +178,7 @@ footer {
     min-height: 60px;
     background-color: #006400;
     color: white;
-    transition: all .3s;
+    transition: all 0.3s;
     display: flex;
 }
 
@@ -202,4 +216,14 @@ a {
     align-items: center;
     text-align: end;
     justify-content: center;
+} 
+
+@media (width < 770px) {
+   body{
+    width: 50vw;
+   }
+
+   footer{
+    width: 100vw;
+   }
 }
