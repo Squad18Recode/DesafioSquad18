@@ -4,7 +4,7 @@
 <h1>Add node modules</h1>
 <p>@popperjs</p>
 <p>bootstrap</p>
-<p>toastify-js</p>>
+<p>toastify-js</p>
 
 <div><h1 style="color:#000">Modelo Físico</h1></div>
 
