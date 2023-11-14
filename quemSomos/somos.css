@@ -4,11 +4,12 @@
     padding: 0;
 }
 
-.logo{
+.logo {
     height: 65px;
     display: inline-block;
     margin-right: 10px;
 }
+
 .navbar {
     position: fixed !important;
     top: 0;
@@ -33,11 +34,6 @@ button:hover {
     transform: scale(1.1);
 }
 
-img:hover {
-    transition: transform 1.8s;
-    transform: scale(1.1);
-}
-
 .dropdown-item {
     color: black !important;
 }
@@ -49,11 +45,8 @@ img:hover {
     height: 50%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 2%;
-    margin-right: 2%;
     margin-bottom: 2%;
-    margin-top: 5%;
-   
+    margin-top: 6.2%;
     color: #ffffff;
     text-shadow: 3px 3px 5px rgba(35, 142, 70, 0.822);
 }
@@ -63,55 +56,27 @@ img:hover {
 }
 
 .dflex {
-
     margin-top: 4%;
     background-color: #d8ef9f6c;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     padding: 0px 25px 32px;
 }
 
 .dflex img {
-    margin-top: 5%;
     width: 30%;
-    height: 30%;
-
-}
-
-.first-image {
-    margin-top: 15px;
-}
-
-.text {
-    margin-top: 2%;
-    display: flex;
-    flex-direction: column;
-    margin-right: 15%;
-    margin-left: 15%;
-}
-
-footer {
-    position: relative;
-    top: 40px;
-    height: fit-content;
-    margin: auto;
-    padding: 1rem;
-    background-color: #333333;
-    ;
-    text-align: center;
-    font-family: 'Poppins', sans-serif !important;
-    color: #fff;
-    border-bottom-right-radius: .5em;
+    height: auto;
 }
 
 .university-section {
     display: grid;
     grid-template-columns: 450px 1fr;
     align-items: center;
+    justify-content: center;
     max-width: 1780px;
     background-color: #FFFACD !important;
     margin-top: 80px;
-    justify-items: center;
     background: #333333;
     padding: 32px 24px;
     border-radius: 10px;
@@ -128,6 +93,20 @@ footer {
     left: 435px;
 }
 
+
+.body-inside-section h4 {
+    color: #2A483C;
+    font-family: "Poppins", Sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: none;
+    font-style: normal;
+}
+
+.body-inside-section a {
+    text-decoration: none;
+}
+
 .button-btn {
     cursor: pointer;
     border: none;
@@ -141,28 +120,6 @@ footer {
     border-radius: 5px;
 }
 
-.body-inside-section h4 {
-    color: #2A483C;
-    font-family: "Poppins", Sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    text-transform: none;
-    font-style: normal;
-    text-decoration: none;
-    line-height: 1.2em;
-    letter-spacing: 0px;
-    word-spacing: 0em;
-    -webkit-text-stroke-color: #000;
-    stroke: #000;
-}
-
-.body-inside-section a {
-    text-decoration: none;
-}
-
-.content-footer {
-    margin-top: 10px;
-}
 
 .body-inside-section p {
     display: block;
@@ -176,9 +133,12 @@ footer {
 
 .text {
     display: flex;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
-
+    text-align: center;
+    margin-top: 2%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 .text p {
@@ -195,10 +155,23 @@ footer {
 
 }
 
-.text-1 {
-    margin-left: 16px;
+footer {
+    position: relative;
+    top: 40px;
+    height: fit-content;
+    margin: auto;
+    padding: 1rem;
+    background-color: #333333;
+    ;
+    text-align: center;
+    font-family: 'Poppins', sans-serif !important;
+    color: #fff;
+    border-bottom-right-radius: .5em;
 }
 
+.content-footer {
+    margin-top: 10px;
+}
 
 @media (max-width: 768px) {
     .dflex {
@@ -221,11 +194,36 @@ footer {
 
 }
 
-@media (width < 480px){
-    .body-inside-section{
-        margin-right: 100px;
+@media (width < 480px) {
+    .university-section {
+        display: flex;
     }
-    .body-inside-section p{
-        margin-right: 20px;
+} 
+
+@media (width > 768px) and (width < 920px) {
+
+    .body-inside-section {
+        left: 0px; 
+        max-width: 800px;
     }
+}
+
+@media (max-width: 1200px) {
+    .img-background {
+        margin-top: 10%;
     }
+}
+
+@media (max-width : 760px) {
+    .img-background {
+        margin-top: 20%;
+    }
+}
+
+@media (width < 360px) {
+
+    .img-background {
+        margin-top: 25%;
+    }
+
+}

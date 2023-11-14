@@ -2,14 +2,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- 
+
 }
 
-.logo{
-    height: 65px;
-    display: inline-block;
-    margin-right: 10px;
+.logo {
+  height: 65px;
+  display: inline-block;
+  margin-right: 10px;
 }
+
+.logo-conecta{
+  margin-top: 50px;
+  width: 50%;
+  height: 150px;
+}
+
+
 
 
 .navbar {
@@ -27,6 +35,7 @@
 a {
   color: #ffff !important;
 }
+
 .dropdown-item {
   color: black !important;
 }
@@ -612,6 +621,10 @@ footer p {
     width: 250px;
     margin-top: 0px;
     margin-bottom: 10px;
+  }
+
+  .logo-conecta{
+    width: 80%;
   }
 }
 

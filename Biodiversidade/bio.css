@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
 }
-   
-.logo{
+
+.logo {
     height: 65px;
     display: inline-block;
     margin-right: 10px;
@@ -15,7 +15,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 998;
+    z-index: 99;
     min-height: 60px;
     background-color: #006400;
     color: white;
@@ -24,11 +24,6 @@
 
 a {
     color: #ffff !important;
-}
-
-img:hover {
-    transition: transform 1.8s;
-    transform: scale(1.1);
 }
 
 .dropdown-item {
@@ -42,10 +37,8 @@ img:hover {
     height: 50%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 2%;
-    margin-right: 2%;
     margin-bottom: 2%;
-    margin-top: 5%;
+    margin-top: 6%;
     text-align: center;
     color: #ffffff;
     text-shadow: 3px 3px 5px rgba(35, 142, 70, 0.822);
@@ -57,32 +50,43 @@ img:hover {
 }
 
 .dflex {
-    margin-top: 4%;
     background-color: #d8ef9f6c;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 4%;
     padding: 0px 25px 32px;
+    gap: 10px;
 }
 
 .dflex img {
-    margin-top: 8%;
     width: 32%;
     height: 100%;
-
-}
-
-
-.first-image {
-    margin-top: 15px;
 }
 
 .text {
-    margin-top: 2%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-top: 2%;
+    margin-right: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
+.text p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgb(51, 51, 51);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 22px;
+    width: 100%;
 }
 
 footer {
@@ -173,30 +177,6 @@ footer {
     color: #324A6D;
 }
 
-.text {
-    display: flex;
-    text-align: center;
-    align-items: center;
-
-}
-
-.text p {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: rgb(51, 51, 51);
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-size: 22px;
-    width: 500px;
-}
-
-.text-1 {
-    margin-left: 16px;
-}
 
 
 @media (max-width: 768px) {
@@ -214,12 +194,14 @@ footer {
         left: 0;
     }
 
-    .imagem {
-        flex-direction: column-reverse;
-    }
-    
-    p{
-       max-width: 350px;
+    main p {
+        max-width: 350px;
     }
 
+}
+
+@media (max-width: 780px) {
+    .img-background {
+        margin-top: 18%;
+    }
 }

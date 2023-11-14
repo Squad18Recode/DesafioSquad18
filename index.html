@@ -16,11 +16,11 @@
 </head>
 
 <body>
-  <header></header>
-  <main class="main-class">
+  <header>
+
     <nav class="navbar navbar-expand-lg bg-body-primary">
       <div class="container-fluid">
-            <img class="logo" src="./assets/Logo-da-nav.png" alt="logo">
+        <img class="logo" src="./assets/Logo-da-nav.png" alt="logo">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,8 +37,7 @@
               <a class="nav-link" href="./quemSomos/pessoal.html">Sobre Nós</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Conteúdo
               </a>
               <ul class="dropdown-menu">
@@ -50,10 +49,12 @@
         </div>
       </div>
     </nav>
-
-    <section class="testimonial text-center">
+  </header>
+  
+  <main class="main-class">
+    <section class="testimonial text-center"> 
       <div class="container">
-
+        <img class="logo-conecta" src="./assets/logo--conecta.png" alt="Logo">
         <div id="testimonial4"
           class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
           data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
@@ -106,7 +107,7 @@
           Transformar é um dos lemas mais importante que carregamos conosco. Ressignificamos toneladas
           de materiais descartáveis todos os meses, onde produtos que iriam parar em aterros ou lixões, ganham uma
           nova forma, retornando para a indústria e posteriormente para o mercado.</span>
-        <hr/>
+        <hr />
       </div>
       </div>
       <div class="d-flex">
@@ -140,14 +141,14 @@
             <p>Campanhas de conscientização: Desenvolvemos campanhas de sensibilização para educar a comunidade sobre a
               importância da reciclagem e como fazê-lo corretamente.</p>
           </div>
-          
+
         </div>
         <div class="nav-buttons">
           <button class="prev-button">&lt;</button>
           <button class="next-button">&gt;</button>
         </div>
       </div>
-      <h4 class="subtitle">Se interessou por algum dos nossos produtos?</h4>
+      <h4 class="subtitle">Se interessou no nosso trabalho?</h4>
       <span><b>Faça o cadastro</b></span>
       <button class="insert">
         <a href="./cadastro/cadastro.html" class="link-insert">Cadastre-se Aqui</a></button>
@@ -180,124 +181,125 @@
         </div>
       </div>
     </section>
+
     <footer>
       <p>&copy; Empreenda - Todos os direitos reservados.</p>
     </footer>
-  </main>
 
 
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuk6h_Zt2dfFC_bPUmu4eo8dZOGK0henE&callback=initMap"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  >
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
-  <script>
-    let map;
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuk6h_Zt2dfFC_bPUmu4eo8dZOGK0henE&callback=initMap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    >
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
-    async function initMap() {
+    <script>
+      let map;
 
-      const position = { lat: -25.344, lng: 131.031 };
+      async function initMap() {
 
-      const { Map } = await google.maps.importLibrary("maps");
-      const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
+        const position = { lat: -25.344, lng: 131.031 };
 
-
-      map = new Map(document.getElementById("map"), {
-        zoom: 4,
-        center: position,
-        mapId: "DEMO_MAP_ID",
-      });
+        const { Map } = await google.maps.importLibrary("maps");
+        const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
 
 
-      const marker = new AdvancedMarkerView({
-        map: map,
-        position: position,
-        title: "Uluru",
-      });
-    }
-
-    initMap();
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const cardsContainer = document.querySelector(".cards-container");
-      const prevButton = document.querySelector(".prev-button");
-      const nextButton = document.querySelector(".next-button");
-      let currentIndex = 0;
-
-      const totalCards = cardsContainer.children.length;
-      prevButton.addEventListener("click", function () {
-        currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-        updateCarousel();
-      });
-      nextButton.addEventListener("click", function () {
-        currentIndex = (currentIndex + 1) % totalCards;
-        updateCarousel();
-      });
-
-      function updateCarousel() {
-        const cardWidth = cardsContainer.children[0].getBoundingClientRect().width;
-        cardsContainer.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-      }
-      const cardElements = document.querySelectorAll(".card");
-
-      cardElements.forEach((card, index) => {
-        const cardInfo = card.getAttribute("data-info");
-
-        card.addEventListener("mouseover", function () {
-          showInfo(cardInfo, card);
+        map = new Map(document.getElementById("map"), {
+          zoom: 4,
+          center: position,
+          mapId: "DEMO_MAP_ID",
         });
 
-        card.addEventListener("mouseout", function () {
-          hideInfo();
+
+        const marker = new AdvancedMarkerView({
+          map: map,
+          position: position,
+          title: "Uluru",
         });
-      });
-
-      const infoDiv = document.createElement("div");
-      infoDiv.className = "info-popup";
-
-      function showInfo(info, card) {
-        infoDiv.textContent = info;
-        const cardRect = card.getBoundingClientRect();
-        infoDiv.style.top = `${cardRect.top + window.scrollY - 10}px`;
-        infoDiv.style.left = `${cardRect.left}px`;
-        document.body.appendChild(infoDiv);
       }
 
-      function hideInfo() {
-        document.body.removeChild(infoDiv);
-      }
-    });
+      initMap();
 
+      document.addEventListener("DOMContentLoaded", function () {
+        const cardsContainer = document.querySelector(".cards-container");
+        const prevButton = document.querySelector(".prev-button");
+        const nextButton = document.querySelector(".next-button");
+        let currentIndex = 0;
 
-    document.getElementById("enviarButton").addEventListener("click", function () {
-      Toastify({
-        text: "Enviado com sucesso",
-        duration: 3000,
-        destination: "#",
-        newWindow: true,
-        close: true,
-        gravity: "top",
-        position: "left",
-        stopOnFocus: true,
-        style: {
-          background: "linear-gradient(to right, #00b09b, #96c93d)",
-        },
-        onClick: function () {
+        const totalCards = cardsContainer.children.length;
+        prevButton.addEventListener("click", function () {
+          currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+          updateCarousel();
+        });
+        nextButton.addEventListener("click", function () {
+          currentIndex = (currentIndex + 1) % totalCards;
+          updateCarousel();
+        });
 
+        function updateCarousel() {
+          const cardWidth = cardsContainer.children[0].getBoundingClientRect().width;
+          cardsContainer.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
         }
-      }).showToast();
-    });
+        const cardElements = document.querySelectorAll(".card");
 
-  </script>
+        cardElements.forEach((card, index) => {
+          const cardInfo = card.getAttribute("data-info");
+
+          card.addEventListener("mouseover", function () {
+            showInfo(cardInfo, card);
+          });
+
+          card.addEventListener("mouseout", function () {
+            hideInfo();
+          });
+        });
+
+        const infoDiv = document.createElement("div");
+        infoDiv.className = "info-popup";
+
+        function showInfo(info, card) {
+          infoDiv.textContent = info;
+          const cardRect = card.getBoundingClientRect();
+          infoDiv.style.top = `${cardRect.top + window.scrollY - 10}px`;
+          infoDiv.style.left = `${cardRect.left}px`;
+          document.body.appendChild(infoDiv);
+        }
+
+        function hideInfo() {
+          document.body.removeChild(infoDiv);
+        }
+      });
+
+
+      document.getElementById("enviarButton").addEventListener("click", function () {
+        Toastify({
+          text: "Enviado com sucesso",
+          duration: 3000,
+          destination: "#",
+          newWindow: true,
+          close: true,
+          gravity: "top",
+          position: "left",
+          stopOnFocus: true,
+          style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+          },
+          onClick: function () {
+
+          }
+        }).showToast();
+      });
+
+    </script>
 </body>
 
 </html>
