@@ -10,3 +10,6 @@
 
 ![Banco de Dados Logico](https://github.com/Squad18Recode/DesafioSquad18/assets/141359733/7f67abe7-de36-437c-bcf8-7d40cb04a280)
 
+<div><h1>UML</h1></div>
+
+![UML](https://github.com/Squad18Recode/DesafioSquad18/assets/141359733/320522c1-62f1-4bfd-93ea-b21d70db8520)
