@@ -1,22 +1,37 @@
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     width: 100%;
     background-image: url(../assets/textura-reciclar.avif);
     overflow-x: hidden;
 }
 
-.logo{
+.logo {
     height: 65px;
     display: inline-block;
     margin-right: 10px;
 }
 
 
+.navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+    min-height: 60px;
+    background-color: #006400;
+    color: white;
+    transition: all 0.3s;
+    display: flex;
+}
 
 .nav-buttons {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-  }
+}
 
 .profile-card {
     position: relative;
@@ -152,14 +167,14 @@ body {
     background-color: #fff;
 }
 
- .link {
+.link {
     cursor: pointer !important;
     color: #fff;
 }
 
 footer {
-    position: relative;
-    top: 212px;
+    position: fixed;
+    bottom: 0;
     margin: auto;
     padding: 1rem;
     background-color: #333333;
@@ -168,20 +183,9 @@ footer {
     border-bottom-right-radius: .5em;
     border-radius: 5px;
     font-size: 14px;
+    width: 100vw;
 }
 
-.navbar {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 998;
-    min-height: 60px;
-    background-color: #006400;
-    color: white;
-    transition: all 0.3s;
-    display: flex;
-}
 
 a {
     color: #ffff !important;
@@ -217,14 +221,21 @@ a {
     align-items: center;
     text-align: end;
     justify-content: center;
-} 
+}
 
 @media (width < 770px) {
-   body{
-    width: 50vw;
-   }
+    .row {
+        margin-right: 200px;
+    }
 
-   footer{
-    width: 100vw;
-   }
+    .container-fluid>.navbar-collapse,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container>.navbar-header {
+        margin-left: 0;
+    }
+
+    .btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+         display: none; 
+    }
 }
